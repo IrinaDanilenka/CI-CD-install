@@ -1,0 +1,72 @@
+.todoItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: var(--bg-item);
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.todoItem:hover {
+  background: var(--bg-item-hover);
+  box-shadow: 0 2px 4px var(--shadow);
+  transform: translateY(-2px);
+}
+
+.todoItemContent {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.todoItemCheckbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: var(--accent-color);
+}
+
+.todoItemText {
+  font-size: 1rem;
+  color: var(--text-primary);
+  flex: 1;
+  transition: color 0.3s ease;
+}
+
+.todoItemActions {
+  display: flex;
+  gap: 8px;
+}
+
+.todoItemButton {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.todoItemButtonEdit {
+  background: var(--accent-color);
+  color: var(--button-text);
+}
+
+.todoItemButtonEdit:hover {
+  background: var(--accent-hover);
+  transform: scale(1.05);
+}
+
+.todoItemButtonDelete {
+  background: #dc3545;
+  color: white;
+}
+
+.todoItemButtonDelete:hover {
+  background: #c82333;
+  transform: scale(1.05);
+}

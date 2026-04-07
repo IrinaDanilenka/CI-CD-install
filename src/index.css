@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --bg-card: rgba(255, 255, 255, 0.95);
+  --bg-item: #f8f9fa;
+  --bg-item-hover: #e9ecef;
+  --bg-button-secondary: white;
+  --bg-button-secondary-hover: #f0f2ff;
+  --text-primary: #333;
+  --text-secondary: #666;
+  --border-color: #e0e0e0;
+  --border-bottom: #e0e0e0;
+  --accent-color: #667eea;
+  --accent-hover: #5568d3;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --shadow-accent: rgba(102, 126, 234, 0.3);
+  --shadow-accent-hover: rgba(102, 126, 234, 0.4);
+  --shadow-focus: rgba(102, 126, 234, 0.1);
+  --button-text: white;
+  --button-accent-text: #667eea;
+}
+
+[data-theme='dark'] {
+  --bg-primary: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  --bg-card: rgba(30, 30, 46, 0.95);
+  --bg-item: rgba(40, 40, 60, 0.8);
+  --bg-item-hover: rgba(50, 50, 70, 0.9);
+  --bg-button-secondary: rgba(40, 40, 60, 0.8);
+  --bg-button-secondary-hover: rgba(50, 50, 70, 0.9);
+  --text-primary: #e0e0e0;
+  --text-secondary: #b0b0b0;
+  --border-color: rgba(224, 224, 224, 0.2);
+  --border-bottom: rgba(224, 224, 224, 0.2);
+  --accent-color: #7c8df0;
+  --accent-hover: #667eea;
+  --shadow: rgba(0, 0, 0, 0.3);
+  --shadow-accent: rgba(124, 141, 240, 0.3);
+  --shadow-accent-hover: rgba(124, 141, 240, 0.4);
+  --shadow-focus: rgba(124, 141, 240, 0.2);
+  --button-text: white;
+  --button-accent-text: #7c8df0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background 0.3s ease;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

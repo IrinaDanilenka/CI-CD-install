@@ -1,0 +1,65 @@
+.addTodoForm {
+  background: var(--bg-card);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 6px var(--shadow);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.addTodoFormTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--border-bottom);
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.addTodoFormContainer {
+  display: flex;
+  gap: 12px;
+}
+
+.addTodoFormInput {
+  flex: 1;
+  padding: 12px 16px;
+  font-size: 1rem;
+  color: var(--text-primary);
+  background: var(--bg-item);
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.addTodoFormInput::placeholder {
+  color: var(--text-secondary);
+}
+
+.addTodoFormInput:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px var(--shadow-focus);
+}
+
+.addTodoFormButton {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--button-text);
+  background: linear-gradient(135deg, var(--accent-color) 0%, #764ba2 100%);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px var(--shadow-accent);
+}
+
+.addTodoFormButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px var(--shadow-accent-hover);
+}
+
+.addTodoFormButton:active {
+  transform: translateY(0);
+}
