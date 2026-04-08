@@ -19,6 +19,7 @@ jobs:
           passphrase: ${{ secrets.SSH_PASSPHRASE }}
           script: |
             cd /var/www/CI-CD-install
+            git stash
             git pull
             npm install
             npm run build
